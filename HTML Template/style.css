@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
 /*              Sass Template           */
 /*  global classes  */
+@import url('https://v1.fontapi.ir/css/Vazir:300;400');
+
 button, button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-
+body {
+  font-family: Vazirmatn, sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+}
 /* typography classes */
 .font-baloo {
   font-family: "Baloo Thambi 2", cursive;

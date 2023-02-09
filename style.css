@@ -1,22 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap"); */
 /*              Sass Template           */
 /*  global classes  */
+@import url('https://v1.fontapi.ir/css/Vazir:300;400');
 button, button:focus {
     outline: none !important;
     box-shadow: none !important;
 }
-
+body {
+    font-family: Vazirmatn, sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+}
 /* typography classes */
 .font-baloo {
-    font-family: "Baloo Thambi 2", cursive;
+    font-family: Vazirmatn, sans-serif;
 }
 
 .font-rale {
-    font-family: "Raleway", cursive;
+    font-family: Vazirmatn, sans-serif;
 }
 
 .font-rubik {
-    font-family: "Rubik", cursive;
+    font-family: Vazirmatn, sans-serif;
 }
 
 .font-size-12 {
@@ -45,11 +49,11 @@ button, button:focus {
 }
 
 .color-second {
-    color: #00A5C4;
+    color: #0D2124;
 }
 
 .color-second-bg {
-    background: #00A5C4;
+    background: #0D2124;
 }
 
 .color-yellow {
@@ -98,6 +102,7 @@ button, button:focus {
 #special-price .grid .grid-item {
     margin-right: 1.2rem;
     margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, .3);
 }
 
 /*# sourceMappingURL=style.css.map */

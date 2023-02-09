@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <section id="cart" class="py-3 mb-5">
     <div class="container-fluid w-75">
-        <h5 class="font-baloo font-size-20">Wishlist</h5>
+        <h5 class="font-baloo font-size-20">علاقه مندیها</h5>
 
         <!--  shopping cart items   -->
         <div class="row">
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             </div>
                             <div class="col-sm-8">
                                 <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
-                                <small>by <?php echo $item['item_brand'] ?? "Brand"; ?></small>
+                                <small> <?php echo $item['item_brand'] ?? "Brand"; ?></small>
                                 <!-- product rating -->
                                 <div class="d-flex">
                                     <div class="rating text-warning font-size-12">
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="far fa-star"></i></span>
                                     </div>
-                                    <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
+                                    <a href="#" class="px-2 font-rale font-size-14">20 رتبه بندی</a>
                                 </div>
                                 <!--  !product rating-->
 
@@ -49,12 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                                     <form method="post">
                                         <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
-                                        <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger pl-0 pr-3 border-right">Delete</button>
+                                        <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger pl-0 pr-3 border-right">حذف</button>
                                     </form>
 
                                     <form method="post">
                                         <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
-                                        <button type="submit" name="cart-submit" class="btn font-baloo text-danger">Add to Cart</button>
+                                        <button type="submit" name="cart-submit" class="btn font-baloo text-danger">اضافه به سبد خرید</button>
                                     </form>
 
 
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                             <div class="col-sm-2 text-right">
                                 <div class="font-size-20 text-danger font-baloo">
-                                    $<span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['item_price'] ?? 0; ?></span>
+                                    <span class="product_price" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><?php echo $item['item_price'] ?? 0; ?>هزارتومان</span>
                                 </div>
                             </div>
                         </div>

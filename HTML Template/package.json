@@ -1,5 +1,5 @@
 {
-  "name": "mobileshopee",
+  "name": "attari",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "sass ./sass/style.scss style.css --watch"
   },
-  "author": "akshay kashyap",
+  "author": "fatima",
   "license": "ISC"
 }
